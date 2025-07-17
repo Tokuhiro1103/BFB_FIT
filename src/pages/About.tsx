@@ -4,16 +4,95 @@ const About: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* トップ画像 */}
-      <div className="w-full h-64 mb-8 rounded-xl overflow-hidden shadow-lg">
+      <div className="relative w-full h-64 rounded-xl ">
         <img
-          src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80"
-          alt="フィットネスイメージ"
+          src="image_ex1.jpg"
+          alt="BFB FIT トップ画像"
           className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-4xl font-bold text-white drop-shadow-lg">BFB FIT</h1>
+        </div>
       </div>
-      <h1 className="text-3xl font-bold mb-4 text-orange-600">アハトの自己紹介</h1>
-      <p className="mb-2 text-orange-900">ここにアハトさんの経歴やビジョン、アピールポイントなどを記載します。</p>
-      {/* 詳細は後ほど追加 */}
+
+      {/* 自己紹介セクション */}
+      <div className="flex items-center mb-12 bg-white rounded-xl p-6">
+        <div className="w-24 h-24 rounded-full overflow-hidden mr-6">
+          <img
+            src="/icon_business_man01.png"
+            alt="アハトのプロフィール"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold text-orange-600 mb-2">こんにちは、アハトです！</h2>
+          <p className="text-orange-800">
+            日本の大学卒業後、オーストラリアに移住。語学学校を経てTAFEでCert3・4（フィットネス）を修了し、
+            現在はパーソナルトレーナーとして活動しています。低価格で始めやすく、どんな方も歓迎！
+            楽しく続けられるトレーニングを提供します。
+          </p>
+        </div>
+      </div>
+
+      {/* 活動実績セクション */}
+      <div className="mb-12">
+        <h3 className="text-xl font-bold text-orange-600 mb-6 text-center">活動実績</h3>
+        <div className="flex items-center bg-white rounded-xl p-6 shadow-lg">
+          <div className="w-48 rounded-lg overflow-hidden mr-6">
+            <img
+              src="https://images.unsplash.com/photo-157101961345419d8?auto=format&fit=crop&w=400&q=80"
+              alt="トレーニング実績"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <p className="text-orange-800">
+              こんなトレーニングをしました！よく下文章〜
+              スポーツコーチングや睡眠コーチングなど、多岐にわたるスキルを活かして
+              お客様一人ひとりに最適なプログラムを提供しています。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* 次のトレーニングセクション */}
+      <div className="mb-12">
+        <div className="flex items-center bg-white rounded-xl p-6 shadow-lg">
+          <div className="flex-1 mr-6">
+            <p className="text-orange-800">
+              次はこんなトレーニングもしています！〜
+              出張対応可能、オンラインセッション対応で、
+              お客様のライフスタイルに合わせた柔軟なサービスを提供しています。
+            </p>
+          </div>
+          <div className="w-48 rounded-lg overflow-hidden flex-shrink0">
+            <img
+              src="https://images.unsplash.com/photo-157101961345419d8?auto=format&fit=crop&w=400&q=80"
+              alt="次のトレーニング"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* アピールポイント */}
+      <div className="mb-8 bg-orange-100 rounded-xl p-6">
+        <h4 className="text-lg font-bold text-orange-700 mb-4">アピールポイント</h4>
+        <div className="space-y-2">
+          <p className="text-orange-800">格です！</p>
+          <p className="text-orange-800">な方大歓迎！</p>
+        </div>
+      </div>
+
+      {/* SNSリンク */}
+      <div className="flex justify-center space-x-6">
+        <a href="#" className="bg-green-50 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors">
+          ノート
+        </a>
+        <a href="#" className="bg-pink-50 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition-colors">
+          インスタ
+        </a>
+      </div>
     </div>
   );
 };
