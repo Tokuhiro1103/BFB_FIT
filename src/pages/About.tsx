@@ -2,9 +2,9 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      {/* トップ画像 */}
-      <div className="relative w-full h-64 rounded-xl ">
+    <>
+      {/* トップ画像 - 画面いっぱい */}
+      <div className="relative w-full h-96">
         <img
           src="image_ex1.jpg"
           alt="BFB FIT トップ画像"
@@ -15,11 +15,18 @@ const About: React.FC = () => {
         </div>
       </div>
 
+      {/* メインコンテンツ - 幅制限あり */}
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        {/* プロフィールタイトル */}
+        <div className="text-center my-8">
+          <h2 className="text-3xl font-bold text-orange-600">プロフィール</h2>
+        </div>
+
       {/* 自己紹介セクション */}
       <div className="flex items-center mb-12 bg-white rounded-xl p-6">
-        <div className="w-24 h-24 rounded-full overflow-hidden mr-6">
+        <div className="w-64 h-80 rounded-full overflow-hidden mr-24 flex-shrink-0">
           <img
-            src="/icon_business_man01.png"
+            src="/image_achat.jpg"
             alt="アハトのプロフィール"
             className="w-full h-full object-cover"
           />
@@ -30,6 +37,9 @@ const About: React.FC = () => {
             日本の大学卒業後、オーストラリアに移住。語学学校を経てTAFEでCert3・4（フィットネス）を修了し、
             現在はパーソナルトレーナーとして活動しています。低価格で始めやすく、どんな方も歓迎！
             楽しく続けられるトレーニングを提供します。
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
           </p>
         </div>
       </div>
@@ -37,10 +47,10 @@ const About: React.FC = () => {
       {/* 活動実績セクション */}
       <div className="mb-12">
         <h3 className="text-xl font-bold text-orange-600 mb-6 text-center">活動実績</h3>
-        <div className="flex items-center bg-white rounded-xl p-6 shadow-lg">
-          <div className="w-48 rounded-lg overflow-hidden mr-6">
+        <div className="flex items-center bg-white rounded-xl p-6">
+          <div className="w-96 h-96 overflow-hidden mr-6 flex-shrink-0">
             <img
-              src="https://images.unsplash.com/photo-157101961345419d8?auto=format&fit=crop&w=400&q=80"
+              src="image_ex1.jpg"
               alt="トレーニング実績"
               className="w-full h-full object-cover"
             />
@@ -50,6 +60,13 @@ const About: React.FC = () => {
               こんなトレーニングをしました！よく下文章〜
               スポーツコーチングや睡眠コーチングなど、多岐にわたるスキルを活かして
               お客様一人ひとりに最適なプログラムを提供しています。
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              ああああああああああああああああああああああああああああああああああ
+              ああああああああああああああああああああああああああああああああああ
             </p>
           </div>
         </div>
@@ -93,7 +110,8 @@ const About: React.FC = () => {
           インスタ
         </a>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
