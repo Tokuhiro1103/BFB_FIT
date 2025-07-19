@@ -33,7 +33,7 @@ const About: React.FC = () => {
         </div>
         <div>
           <h2 className="text-2xl font-bold text-orange-600 mb-2">こんにちは、アハトです！</h2>
-          <p className="text-orange-800">
+          <p className="text-gray-800">
             日本の大学卒業後、オーストラリアに移住。語学学校を経てTAFEでCert3・4（フィットネス）を修了し、
             現在はパーソナルトレーナーとして活動しています。低価格で始めやすく、どんな方も歓迎！
             楽しく続けられるトレーニングを提供します。
@@ -46,9 +46,9 @@ const About: React.FC = () => {
 
       {/* 活動実績セクション */}
       <div className="mb-12">
-        <h3 className="text-xl font-bold text-orange-600 mb-6 text-center">活動実績</h3>
+        <h3 className="text-xl font-bold text-orange-600 mb-6 text-center">活動紹介</h3>
         <div className="flex items-center bg-white rounded-xl p-6">
-          <div className="w-96 h-96 overflow-hidden mr-6 flex-shrink-0">
+          <div className="w-96 h-96 overflow-hidden mr-36 flex-shrink-0">
             <img
               src="image_ex1.jpg"
               alt="トレーニング実績"
@@ -56,7 +56,7 @@ const About: React.FC = () => {
             />
           </div>
           <div>
-            <p className="text-orange-800">
+            <p className="text-gray-800">
               こんなトレーニングをしました！よく下文章〜
               スポーツコーチングや睡眠コーチングなど、多岐にわたるスキルを活かして
               お客様一人ひとりに最適なプログラムを提供しています。
@@ -74,17 +74,26 @@ const About: React.FC = () => {
 
       {/* 次のトレーニングセクション */}
       <div className="mb-12">
-        <div className="flex items-center bg-white rounded-xl p-6 shadow-lg">
-          <div className="flex-1 mr-6">
-            <p className="text-orange-800">
-              次はこんなトレーニングもしています！〜
-              出張対応可能、オンラインセッション対応で、
-              お客様のライフスタイルに合わせた柔軟なサービスを提供しています。
+        <div className="flex items-center bg-white p-6">
+                      <div className="flex-1 mr-36">
+                          <p className="text-gray-800">
+                次はこんなトレーニングもしています！〜
+                出張対応可能、オンラインセッション対応で、
+                お客様のライフスタイルに合わせた柔軟なサービスを提供しています。
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              ああああああああああああああああああああああああああああああああああ
+              ああああああああああああああああああああああああああああああああああああああ
+              あああああああああああああああああああああああああああああああああああああ
+              ああああああああああああああああああああああああああああああああああ
             </p>
           </div>
-          <div className="w-48 rounded-lg overflow-hidden flex-shrink0">
+          <div className="w-96 h-96 overflow-hidden flex-shrink-0">
             <img
-              src="https://images.unsplash.com/photo-157101961345419d8?auto=format&fit=crop&w=400&q=80"
+              src="gym_training2.png"
               alt="次のトレーニング"
               className="w-full h-full object-cover"
             />
@@ -96,8 +105,8 @@ const About: React.FC = () => {
       <div className="mb-8 bg-orange-100 rounded-xl p-6">
         <h4 className="text-lg font-bold text-orange-700 mb-4">アピールポイント</h4>
         <div className="space-y-2">
-          <p className="text-orange-800">格です！</p>
-          <p className="text-orange-800">な方大歓迎！</p>
+          <p className="text-gray-800">格です！</p>
+          <p className="text-gray-800">な方大歓迎！</p>
         </div>
       </div>
 
