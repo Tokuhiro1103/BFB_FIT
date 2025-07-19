@@ -1,6 +1,5 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
-import { FaStickyNote } from "react-icons/fa";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 const About: React.FC = () => {
   return (
@@ -175,8 +174,8 @@ const About: React.FC = () => {
 
      {/* SNSリンク */}
      <div className="flex justify-center space-x-6 mt-16">
-        <a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">
-          <FaStickyNote size={32} />
+        <a href="#" className="text-blue-600 hover:text-blue-700 transition-colors">
+          <FaFacebook size={32} />
         </a>
         <a href="#" className="text-pink-500 hover:text-pink-600 transition-colors">
           <FaInstagram size={32} />
