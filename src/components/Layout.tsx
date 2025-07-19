@@ -9,9 +9,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="container mx-auto flex justify-between items-center px-4">
           <Link to="/" className="text-2xl font-bold text-orange-600">BFB FIT</Link>
           <nav className="space-x-4">
-            <Link to="/about" className="hover:underline text-orange-700 hover:text-orange-500">アハトについて</Link>
-            <Link to="/faq" className="hover:underline text-orange-700 hover:text-orange-500">Q&A</Link>
-            <Link to="/contact" className="hover:underline text-orange-700 hover:text-orange-500">お問い合わせ</Link>
+            <Link to="/about" className="hover:underline text-orange-700 hover:text-orange-500">ホーム</Link>
           </nav>
         </div>
       </header>
