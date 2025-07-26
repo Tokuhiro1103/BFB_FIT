@@ -66,7 +66,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
       {/* トップ画像 - 画面いっぱい */}
       <div className="relative w-full h-96">
         <img
-          src="gym_image3.png"
+          src="gym_image4.jpg"
           alt="BFB FIT トップ画像"
           className="w-full h-full object-cover"
         />
