@@ -76,24 +76,24 @@ const About: React.FC<AboutProps> = ({ lang }) => {
       </div>
 
       {/* メインコンテンツ - 幅制限あり */}
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8 bg-black">
         {/* プロフィールタイトル */}
         <div className="text-center my-8">
-          <h2 className="text-3xl font-bold text-orange-600">{text[lang].profileTitle}</h2>
+          <h2 className="text-3xl font-bold text-white">{text[lang].profileTitle}</h2>
         </div>
 
       {/* 自己紹介セクション */}
-      <div className="flex flex-col lg:flex-row items-center mb-12 bg-white rounded-xl p-6">
+      <div className="flex flex-col lg:flex-row items-center mb-12 bg-gray-900 rounded-xl p-6">
         <div className="w-48 h-60 lg:w-64 lg:h-80 rounded-full overflow-hidden mb-6 lg:mb-0 lg:mr-24 flex-shrink-0">
           <img
-            src="/image_achat.jpg"
+            src="/image_achat2.jpeg"
             alt="プロフィール画像"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="text-center lg:text-left">
-          <h2 className="text-xl lg:text-2xl font-bold text-orange-600 mb-2">{text[lang].greeting}</h2>
-          <p className="text-gray-800 text-sm lg:text-base" style={{ whiteSpace: 'pre-line' }}>
+          <h2 className="text-xl lg:text-2xl font-bold text-white mb-2">{text[lang].greeting}</h2>
+          <p className="text-white text-sm lg:text-base" style={{ whiteSpace: 'pre-line' }}>
             {text[lang].intro}
           </p>
         </div>
@@ -101,8 +101,8 @@ const About: React.FC<AboutProps> = ({ lang }) => {
 
       {/* 活動実績セクション */}
       <div className="mb-12">
-        <h3 className="text-xl font-bold text-orange-600 mb-6 text-center">{text[lang].trainingTitle}</h3>
-        <div className="flex flex-col lg:flex-row items-center bg-white rounded-xl p-6">
+        <h3 className="text-xl font-bold text-white mb-6 text-center">{text[lang].trainingTitle}</h3>
+        <div className="flex flex-col lg:flex-row items-center bg-gray-900 rounded-xl p-6">
           <div className="w-full lg:w-96 h-64 lg:h-96 overflow-hidden mb-6 lg:mb-0 lg:mr-36 flex-shrink-0">
             <img
               src="image_ex1.jpg"
@@ -111,7 +111,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
             />
           </div>
           <div className="text-center lg:text-left">
-            <p className="text-gray-800 text-sm lg:text-base" style={{ whiteSpace: 'pre-line' }}>
+            <p className="text-white text-sm lg:text-base" style={{ whiteSpace: 'pre-line' }}>
               {text[lang].trainingDesc1}
             </p>
           </div>
@@ -120,9 +120,9 @@ const About: React.FC<AboutProps> = ({ lang }) => {
 
       {/* 次のトレーニングセクション */}
       <div className="mb-12">
-        <div className="flex flex-col-reverse lg:flex-row items-center bg-white p-6">
+        <div className="flex flex-col-reverse lg:flex-row items-center bg-gray-900 p-6">
           <div className="flex-1 mt-6 lg:mt-0 lg:mr-36">
-            <p className="text-gray-800 text-sm lg:text-base text-center lg:text-left" style={{ whiteSpace: 'pre-line' }}>
+            <p className="text-white text-sm lg:text-base text-center lg:text-left" style={{ whiteSpace: 'pre-line' }}>
               {text[lang].trainingDesc2}
             </p>
           </div>
@@ -137,58 +137,58 @@ const About: React.FC<AboutProps> = ({ lang }) => {
       </div>
 
       {/* アピールポイント */}
-      <div className="mb-8 bg-orange-100 rounded-xl p-4 lg:p-6">
-        <h4 className="text-base lg:text-lg font-bold text-orange-700 mb-4">{text[lang].meritTitle}</h4>
+      <div className="mb-8 bg-gray-800 rounded-xl p-4 lg:p-6">
+        <h4 className="text-base lg:text-lg font-bold text-white mb-4">{text[lang].meritTitle}</h4>
         <div className="space-y-2">
-          <p className="text-gray-800 text-sm lg:text-base" style={{ whiteSpace: 'pre-line' }}>{text[lang].meritDesc}</p>
+          <p className="text-white text-sm lg:text-base" style={{ whiteSpace: 'pre-line' }}>{text[lang].meritDesc}</p>
         </div>
       </div>
 
       {/* Q&Aセクション */}
       <div className="mt-16">
-        <h3 className="text-xl lg:text-2xl font-bold text-orange-600 mb-8 text-center">{text[lang].faqTitle}</h3>
-        <div className="bg-white rounded-xl p-4 lg:p-8 shadow-lg">
+        <h3 className="text-xl lg:text-2xl font-bold text-white mb-8 text-center">{text[lang].faqTitle}</h3>
+        <div className="bg-gray-900 rounded-xl p-4 lg:p-8 shadow-lg">
           <div className="space-y-4 lg:space-y-6">
-            {text[lang].faq.map((item, idx) => (
-              <div key={idx} className="border-b border-gray-200 pb-4">
-                <h4 className="text-base lg:text-lg font-bold text-gray-800 mb-2">{item.q}</h4>
-                <p className="text-gray-600 text-sm lg:text-base">{item.a}</p>
-              </div>
-            ))}
+                          {text[lang].faq.map((item, idx) => (
+                <div key={idx} className="border-b border-gray-700 pb-4">
+                  <h4 className="text-base lg:text-lg font-bold text-white mb-2">{item.q}</h4>
+                  <p className="text-gray-300 text-sm lg:text-base">{item.a}</p>
+                </div>
+              ))}
           </div>
         </div>
       </div>
 
       {/* Noteリンク */}
       <div className="mt-8 text-center">
-        <p className="text-gray-600 mb-2">{text[lang].noteMore}</p>
-        <a href="#" className="text-orange-600 hover:text-orange-700 underline font-semibold">
+        <p className="text-gray-300 mb-2">{text[lang].noteMore}</p>
+        <a href="#" className="text-red-400 hover:text-red-300 underline font-semibold">
           {text[lang].noteLink}
         </a>
       </div>
 
       {/* お問い合わせセクション */}
       <div className="mt-16">
-        <h3 className="text-xl lg:text-2xl font-bold text-orange-600 mb-8 text-center">{text[lang].contactTitle}</h3>
-        <div className="bg-white rounded-xl p-4 lg:p-8">
-          <p className="text-gray-600 mb-6 text-center text-sm lg:text-base">{text[lang].contactDesc}</p>
+        <h3 className="text-xl lg:text-2xl font-bold text-white mb-8 text-center">{text[lang].contactTitle}</h3>
+        <div className="bg-gray-900 rounded-xl p-4 lg:p-8">
+          <p className="text-gray-300 mb-6 text-center text-sm lg:text-base">{text[lang].contactDesc}</p>
           <form className="space-y-4 max-w-md mx-auto">
             <div>
-              <label className="block mb-1 font-semibold text-gray-700 text-sm lg:text-base">{text[lang].contactName}</label>
-              <input type="text" className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-orange-500" placeholder={text[lang].contactName} />
+              <label className="block mb-1 font-semibold text-white text-sm lg:text-base">{text[lang].contactName}</label>
+              <input type="text" className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" placeholder={text[lang].contactName} />
             </div>
             <div>
-              <label className="block mb-1 font-semibold text-gray-700 text-sm lg:text-base">{text[lang].contactMail}</label>
-              <input type="email" className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-orange-500" placeholder={text[lang].contactMail} />
+              <label className="block mb-1 font-semibold text-white text-sm lg:text-base">{text[lang].contactMail}</label>
+              <input type="email" className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" placeholder={text[lang].contactMail} />
             </div>
             <div>
-              <label className="block mb-1 font-semibold text-gray-700 text-sm lg:text-base">{text[lang].contactContent}</label>
-              <textarea className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-orange-500" rows={4} placeholder={text[lang].contactContent} />
+              <label className="block mb-1 font-semibold text-white text-sm lg:text-base">{text[lang].contactContent}</label>
+              <textarea className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" rows={4} placeholder={text[lang].contactContent} />
             </div>
-            <button type="submit" className="w-full bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors">{text[lang].contactBtn}</button>
+            <button type="submit" className="w-full bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors">{text[lang].contactBtn}</button>
           </form>
           <div className="mt-6 text-center">
-            <a href="#" className="text-orange-600 hover:text-orange-700 underline text-sm lg:text-base">{text[lang].contactDM}</a>
+            <a href="#" className="text-red-400 hover:text-red-300 underline text-sm lg:text-base">{text[lang].contactDM}</a>
           </div>
         </div>
       </div>
