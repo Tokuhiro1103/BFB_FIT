@@ -9,7 +9,7 @@ const text = {
   ja: {
     profileTitle: "プロフィール",
     greeting: "こんにちは、Achatです！",
-    intro: `日本の大学卒業後、オーストラリアに移住。\n語学学校を経てTAFEでCert3・4（フィットネス）を修了し、\n現在はパーソナルトレーナーとして活動しています。低価格で始めやすく、どんな方も歓迎！\n楽しく続けられるトレーニングを提供します。`,
+    intro: `日本の大学卒業後、オーストラリアに移住。\n語学学校を経てTAFEでCertificate III・IV（フィットネス）を修了し、\n現在はパーソナルトレーナーとして活動しています。低価格で始めやすく、どんな方も歓迎！\n確かな知識と経験をもとにあなたの目標達成を全力でサポートします！`,
     trainingTitle: "トレーニングの紹介",
     trainingDesc1: `スポーツコーチングや睡眠コーチングなど、多岐にわたるスキルを活かして、\nお客様一人ひとりに最適なプログラムを提供しています。\n\n運動初心者からアスリート志望の方まで、それぞれの目標やライフスタイルに寄り添ったサポートを行い、無理なく続けられる習慣づくりを大切にしています。\n\nまた、睡眠や食事、メンタルケアといった生活全体のバランスを重視し、体の内側から整えることを意識したプログラム設計を心がけています。\n\n出張トレーニングやオンラインでの指導にも対応しており、お忙しい方や遠方の方でも安心してご利用いただけます。\n\n「変わりたいけど、何から始めればいいかわからない」——そんな方こそ、ぜひ一度ご相談ください。\n一緒に理想の自分を目指して、第一歩を踏み出しましょう。`,
     trainingDesc2: `他にもこんなトレーニングもしています！\n出張対応可能、オンラインセッション対応で、\nお客様のライフスタイルに合わせた柔軟なサービスを提供しています。\n\n筋力アップを目指すパーソナルトレーニングはもちろん、姿勢改善、柔軟性向上、体幹トレーニング、リラクゼーションストレッチなど、幅広いメニューをご用意しています。\n\n年齢や運動経験に関わらず、安心して取り組めるよう丁寧なカウンセリングを行い、目的や体調に応じたプログラムを一緒に作り上げていきます。\n\n「ジムに通うのはハードルが高い」「自宅で気軽に運動したい」そんな方でも、出張やオンラインを活用することで、ご自宅や空き時間に効率的にトレーニングできます。\n\n日々の小さな積み重ねが、体と心に大きな変化をもたらします。\nあなたの目標達成を全力でサポートしますので、ぜひお気軽にご相談ください！`,
@@ -161,15 +161,15 @@ const About: React.FC<AboutProps> = ({ lang }) => {
 
       {/* Noteリンク */}
       <div className="mt-8 text-center">
-        <p className="text-gray-300 mb-2">{text[lang].noteMore}</p>
-        <a href="#" className="text-red-400 hover:text-red-300 underline font-semibold">
+        <p className="  text-gray-300 mb-2">{text[lang].noteMore}</p>
+        <a href="https://note.com/achatfitness001" className="text-2xl text-red-400 hover:text-red-300 underline font-semibold">
           {text[lang].noteLink}
         </a>
       </div>
 
       {/* お問い合わせセクション */}
       <div className="mt-16">
-        <h3 className="text-xl lg:text-2xl font-bold text-white mb-8 text-center">{text[lang].contactTitle}</h3>
+        <h3 className="text-xl lg:text-3xl font-bold text-white mb-8 text-center">{text[lang].contactTitle}</h3>
         <div className="bg-gray-900 rounded-xl p-4 lg:p-8">
           <p className="text-gray-300 mb-6 text-center text-sm lg:text-base">{text[lang].contactDesc}</p>
           <form className="space-y-4 max-w-md mx-auto">
@@ -188,17 +188,17 @@ const About: React.FC<AboutProps> = ({ lang }) => {
             <button type="submit" className="w-full bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors">{text[lang].contactBtn}</button>
           </form>
           <div className="mt-6 text-center">
-            <a href="#" className="text-red-400 hover:text-red-300 underline text-sm lg:text-base">{text[lang].contactDM}</a>
+            <a href="https://www.instagram.com/achatfitness/" className="text-red-400 hover:text-red-300 underline text-sm lg:text-base">{text[lang].contactDM}</a>
           </div>
         </div>
       </div>
 
      {/* SNSリンク */}
     <div className="flex justify-center space-x-6 mt-16">
-        <a href="#" className="text-blue-600 hover:text-blue-700 transition-colors">
+        <a href="https://www.facebook.com/yu.yeachat.you.gui/" className="text-white hover:text-blue-700 transition-colors">
           <FaFacebook size={32} />
         </a>
-        <a href="#" className="text-pink-500 hover:text-pink-600 transition-colors">
+        <a href="https://www.instagram.com/achatfitness/" className="text-white hover:text-pink-600 transition-colors">
           <FaInstagram size={32} />
         </a>
       </div>
