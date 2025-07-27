@@ -33,32 +33,32 @@ const text = {
     contactBtn: "送信",
     contactDM: "InstagramでDMする"
   },
-  en: {
-    profileTitle: "Profile",
-    greeting: "Ex: Hello, I'm Achat!",
-    intro: `【Self Introduction】\nEx:\nAfter graduating from a Japanese university, I moved to Australia. After attending a language school, I completed Cert3 & 4 (Fitness) at TAFE.\nCurrently, I work as a personal trainer. My services are affordable and open to everyone!\nLet's enjoy fitness together!`,
-    trainingTitle: "Training Introduction",
-    trainingDesc1: `【Photo + Description 1】\nEx:\nUtilizing a wide range of skills such as sports coaching and sleep coaching,\nI provide optimal programs tailored to each client.\n\nFrom beginners to aspiring athletes, I support each person's goals and lifestyle, helping them build sustainable habits.\n\nI also focus on overall lifestyle balance, including sleep, diet, and mental care, designing programs that improve the body from the inside out.\n\nI offer on-site and online training, so even busy or distant clients can use my services with confidence.\n\nIf you want to change but don't know where to start, please feel free to consult me.\nLet's take the first step toward your ideal self together!`,
-    trainingDesc2: `【Photo + Description 2】\nEx:\nI also offer various other training!\nOn-site and online sessions are available, providing flexible services to fit your lifestyle.\n\nIn addition to personal training for muscle gain, I offer posture improvement, flexibility, core training, and relaxation stretching.\n\nRegardless of age or experience, I provide careful counseling and create programs tailored to your goals and condition.\n\nIf going to the gym feels like a hurdle or you want to exercise at home, you can train efficiently at home or during your free time using on-site or online sessions.\n\nSmall daily efforts can bring big changes to your body and mind.\nI will fully support you in achieving your goals, so please feel free to contact me!`,
-    meritTitle: "[Appeal Points] Example: Benefits of Using BFB FIT",
-    meritDesc: `Example:\n✅ Beginners welcome\n✅ Propose menus that can be continued without strain\n✅ Support for weight loss, muscle gain, and posture improvement\n✅ Nutrition coaching available! We also introduce well-balanced meal menus using ingredients available in Brisbane.\n🏃‍♀️ Park sessions available! (First session free / from $20)\nSessions in parks near the city are also OK with friends!\nLet's have fun exercising in an open space!\n📍 Location: Southbank Fitness Center (indoor) + parks in Brisbane (outdoor)\n💰 Price: First 2 sessions free! After that, $30~/session (park sessions from $20~)`,
-    faqTitle: "[Tips] Example: Frequently Asked Questions",
-    faq: [
-      { q: "Q. Is it okay for beginners?", a: "A. Absolutely! I will support you carefully. I will create a program that matches your experience level." },
-      { q: "Q. What should I keep in mind about diet?", a: "A. A well-balanced diet is important. Be sure to get enough protein, carbs, and fat, and don't forget to stay hydrated." },
-      { q: "Q. What are some easy exercises I can do at home?", a: "A. Squats, push-ups, and planks are effective even without equipment. Feel free to ask for more details!" },
-      { q: "Q. How can I keep up my motivation?", a: "A. Setting realistic goals and having a fun, sustainable program is key. I will help you stay motivated!" }
-    ],
-    noteMore: "For more details",
-    noteLink: "Check my Note! →",
-    contactTitle: "Contact",
-    contactDesc: "For requests or questions, feel free to use the form below or DM me on Instagram!",
-    contactName: "Name",
-    contactMail: "Email",
-    contactContent: "Request / Inquiry",
-    contactBtn: "Send",
-    contactDM: "DM me on Instagram"
-  }
+      en: {
+      profileTitle: "Profile",
+      greeting: "Hello, I'm Achat!",
+      intro: `After graduating from a Japanese university, I moved to Australia.\nAfter attending a language school, I completed Certificate III & IV (Fitness) at TAFE.\nCurrently, I work as a personal trainer. My services are affordable and open to everyone!\nI will fully support you in achieving your goals with my solid knowledge and experience!`,
+      trainingTitle: "Training Introduction",
+      trainingDesc1: `Utilizing a wide range of skills such as sports coaching and sleep coaching,\nI provide optimal programs tailored to each individual's goals and lifestyle.\n\nThe training I provide covers muscle gain, posture improvement, flexibility enhancement, core training,\nand relaxation stretching to meet various needs.\n\nI focus on overall lifestyle balance, including sleep, diet, and mental care, designing programs that improve the body from the inside out.\n\nI also support everyone from beginners to experienced individuals, adapting to each person's pace and providing sustainable support.\n\nIf you want to change but don't know where to start, please feel free to consult me.\nLet's take the first step toward your ideal self together!`,
+      trainingDesc2: `I also offer on-site and online sessions, making training accessible to anyone regardless of their lifestyle.\n\nIn addition to personal training for muscle gain, I offer posture improvement, flexibility, core training, and relaxation stretching.\n\nRegardless of age or experience, I provide careful counseling and create programs tailored to your goals and condition.\n\nIf going to the gym feels like a hurdle or you want to exercise at home, you can train efficiently at home or during your free time using on-site or online sessions.\n\nSmall daily efforts can bring big changes to your body and mind.\nI will fully support you in achieving your goals, so please feel free to contact me!`,
+      meritTitle: "Flexible and Reliable Support System Tailored to Your Lifestyle",
+      meritDesc: `✅ Beginners welcome\n✅ Propose menus that can be continued without strain\n✅ Support for weight loss, muscle gain, and posture improvement\n✅ Nutrition coaching available! We also introduce well-balanced meal menus using ingredients available in Brisbane.\n🏃‍♀️ Park sessions available! (First session free / from $20)\nSessions in parks near the city are also OK with friends!\nLet's have fun exercising in an open space!\n📍 Location: Southbank Fitness Center (indoor) + parks in Brisbane (outdoor)\n💰 Price: First 2 sessions free! After that, $30~/session (park sessions from $20~)`,
+      faqTitle: "Frequently Asked Questions",
+      faq: [
+        { q: "Q. Is it okay for beginners?", a: "A. Absolutely! I will support you carefully. I will create a program that matches your experience level." },
+        { q: "Q. What should I keep in mind about diet?", a: "A. A well-balanced diet is important. Be sure to get enough protein, carbs, and fat, and don't forget to stay hydrated." },
+        { q: "Q. What are some easy exercises I can do at home?", a: "A. Squats, push-ups, and planks are effective even without equipment. Feel free to ask for more details!" },
+        { q: "Q. How can I keep up my motivation?", a: "A. Setting realistic goals and having a fun, sustainable program is key. I will help you stay motivated!" }
+      ],
+      noteMore: "For more details",
+      noteLink: "Check my Note! →",
+      contactTitle: "Contact",
+      contactDesc: "For requests or questions, feel free to use the form below or DM me on Instagram",
+      contactName: "Name",
+      contactMail: "Email",
+      contactContent: "Request / Inquiry",
+      contactBtn: "Send",
+      contactDM: "DM me on Instagram"
+    }
 };
 
 const About: React.FC<AboutProps> = ({ lang }) => {
