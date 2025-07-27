@@ -11,8 +11,8 @@ const text = {
     greeting: "こんにちは、Achatです！",
     intro: `日本の大学卒業後、オーストラリアに移住。\n語学学校を経てTAFEでCert3・4（フィットネス）を修了し、\n現在はパーソナルトレーナーとして活動しています。低価格で始めやすく、どんな方も歓迎！\n楽しく続けられるトレーニングを提供します。`,
     trainingTitle: "トレーニングの紹介",
-    trainingDesc1: `【写真＋説明文1】\n例：\nスポーツコーチングや睡眠コーチングなど、多岐にわたるスキルを活かして、\nお客様一人ひとりに最適なプログラムを提供しています。\n\n運動初心者からアスリート志望の方まで、それぞれの目標やライフスタイルに寄り添ったサポートを行い、無理なく続けられる習慣づくりを大切にしています。\n\nまた、睡眠や食事、メンタルケアといった生活全体のバランスを重視し、体の内側から整えることを意識したプログラム設計を心がけています。\n\n出張トレーニングやオンラインでの指導にも対応しており、お忙しい方や遠方の方でも安心してご利用いただけます。\n\n「変わりたいけど、何から始めればいいかわからない」——そんな方こそ、ぜひ一度ご相談ください。\n一緒に理想の自分を目指して、第一歩を踏み出しましょう。`,
-    trainingDesc2: `【写真＋説明文2】\n例：\n他にもこんなトレーニングもしています！\n出張対応可能、オンラインセッション対応で、\nお客様のライフスタイルに合わせた柔軟なサービスを提供しています。\n\n筋力アップを目指すパーソナルトレーニングはもちろん、姿勢改善、柔軟性向上、体幹トレーニング、リラクゼーションストレッチなど、幅広いメニューをご用意しています。\n\n年齢や運動経験に関わらず、安心して取り組めるよう丁寧なカウンセリングを行い、目的や体調に応じたプログラムを一緒に作り上げていきます。\n\n「ジムに通うのはハードルが高い」「自宅で気軽に運動したい」そんな方でも、出張やオンラインを活用することで、ご自宅や空き時間に効率的にトレーニングできます。\n\n日々の小さな積み重ねが、体と心に大きな変化をもたらします。\nあなたの目標達成を全力でサポートしますので、ぜひお気軽にご相談ください！`,
+    trainingDesc1: `スポーツコーチングや睡眠コーチングなど、多岐にわたるスキルを活かして、\nお客様一人ひとりに最適なプログラムを提供しています。\n\n運動初心者からアスリート志望の方まで、それぞれの目標やライフスタイルに寄り添ったサポートを行い、無理なく続けられる習慣づくりを大切にしています。\n\nまた、睡眠や食事、メンタルケアといった生活全体のバランスを重視し、体の内側から整えることを意識したプログラム設計を心がけています。\n\n出張トレーニングやオンラインでの指導にも対応しており、お忙しい方や遠方の方でも安心してご利用いただけます。\n\n「変わりたいけど、何から始めればいいかわからない」——そんな方こそ、ぜひ一度ご相談ください。\n一緒に理想の自分を目指して、第一歩を踏み出しましょう。`,
+    trainingDesc2: `他にもこんなトレーニングもしています！\n出張対応可能、オンラインセッション対応で、\nお客様のライフスタイルに合わせた柔軟なサービスを提供しています。\n\n筋力アップを目指すパーソナルトレーニングはもちろん、姿勢改善、柔軟性向上、体幹トレーニング、リラクゼーションストレッチなど、幅広いメニューをご用意しています。\n\n年齢や運動経験に関わらず、安心して取り組めるよう丁寧なカウンセリングを行い、目的や体調に応じたプログラムを一緒に作り上げていきます。\n\n「ジムに通うのはハードルが高い」「自宅で気軽に運動したい」そんな方でも、出張やオンラインを活用することで、ご自宅や空き時間に効率的にトレーニングできます。\n\n日々の小さな積み重ねが、体と心に大きな変化をもたらします。\nあなたの目標達成を全力でサポートしますので、ぜひお気軽にご相談ください！`,
     meritTitle: "【ここにアピールポイントなどを書く】例：BFB FITを利用するメリット",
     meritDesc: `例：\n✅ 初心者歓迎\n✅ 無理なく続けられるメニューをご提案\n✅ 減量・筋力アップ・姿勢改善もサポート\n✅ 栄養コーチング対応可能！ブリスベンで手に入る食材を使った、PFCバランスの整った食事メニューもご紹介！\n🏃‍♀️公園セッションも受付中！（初回無料／20ドル〜）\nシティ近郊の公園で行うセッションは、お友達との参加もOK！\n開放的な空間で楽しく体を動かしましょう！\n📍 場所：Southbank Fitness Center（屋内）＋ Brisbane市内の公園（屋外）\n💰 料金：初回2回無料！その後は1セッション $30〜（公園セッションは $20〜）`,
     faqTitle: "【ここにTipsを書く】例：よくある質問",
@@ -25,7 +25,7 @@ const text = {
     noteMore: "もっと詳しい情報は",
     noteLink: "Noteをcheck! →",
     contactTitle: "お問い合わせ",
-    contactDesc: "ご依頼やご質問は、下記フォームまたはInstagramのDMからお気軽にどうぞ！",
+    contactDesc: "ご依頼やご質問は、下記フォームまたはInstagramのDMからお気軽にメッセージください",
     contactName: "氏名",
     contactMail: "メールアドレス",
     contactContent: "ご依頼・ご相談内容",
@@ -83,7 +83,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
         </div>
 
       {/* 自己紹介セクション */}
-      <div className="flex flex-col lg:flex-row items-center mb-12 bg-gray-900 rounded-xl p-6">
+      <div className="flex flex-col lg:flex-row items-center mb-12 bg-gray-900 p-6">
         <div className="w-48 h-60 lg:w-64 lg:h-80 rounded-full overflow-hidden mb-6 lg:mb-0 lg:mr-24 flex-shrink-0">
           <img
             src="/image_achat2.jpeg"
@@ -101,11 +101,11 @@ const About: React.FC<AboutProps> = ({ lang }) => {
 
       {/* 活動実績セクション */}
       <div className="mb-12">
-        <h3 className="text-xl font-bold text-white mb-6 text-center">{text[lang].trainingTitle}</h3>
-        <div className="flex flex-col lg:flex-row items-center bg-gray-900 rounded-xl p-6">
+        <h3 className="text-3xl font-bold text-white mb-6 text-center">{text[lang].trainingTitle}</h3>
+        <div className="flex flex-col lg:flex-row items-center bg-gray-900 p-6">
           <div className="w-full lg:w-96 h-64 lg:h-96 overflow-hidden mb-6 lg:mb-0 lg:mr-36 flex-shrink-0">
             <img
-              src="image_ex1.jpg"
+              src="image_ex2.jpg"
               alt="トレーニング実績"
               className="w-full h-full object-cover"
             />
@@ -128,7 +128,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
           </div>
           <div className="w-full lg:w-96 h-64 lg:h-96 overflow-hidden flex-shrink-0">
             <img
-              src="gym_training2.png"
+              src="image_ex3.jpg"
               alt="次のトレーニング"
               className="w-full h-full object-cover"
             />
@@ -137,7 +137,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
       </div>
 
       {/* アピールポイント */}
-      <div className="mb-8 bg-gray-800 rounded-xl p-4 lg:p-6">
+      <div className="mb-8 bg-gray-800 p-4 lg:p-6">
         <h4 className="text-base lg:text-lg font-bold text-white mb-4">{text[lang].meritTitle}</h4>
         <div className="space-y-2">
           <p className="text-white text-sm lg:text-base" style={{ whiteSpace: 'pre-line' }}>{text[lang].meritDesc}</p>
