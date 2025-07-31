@@ -16,7 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children, lang, onLangChange }) => {
           <Link to="/" className="text-2xl font-bold text-white">BFB FIT</Link>
           <div className="flex items-center space-x-6">
             <nav className="space-x-4">
-              <Link to="/about" className="hover:underline text-white hover:text-red-400">
+              <Link to="/" className="hover:underline text-white hover:text-red-400">
                 {lang === "ja" ? "ホーム" : "Home"}
               </Link>
             </nav>
