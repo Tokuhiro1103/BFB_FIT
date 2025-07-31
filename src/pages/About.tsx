@@ -100,7 +100,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
       {/* トップ画像 - 画面いっぱい */}
       <div className="relative w-full h-96">
         <img
-          src="gym_image4.jpg"
+          src="/BFB_FIT/gym_image4.jpg"
           alt="BFB FIT トップ画像"
           className="w-full h-full object-cover"
         />
@@ -120,7 +120,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
       <div className="flex flex-col lg:flex-row items-center mb-12 bg-gray-900 p-6">
         <div className="w-48 h-60 lg:w-64 lg:h-80 rounded-full overflow-hidden mb-6 lg:mb-0 lg:mr-24 flex-shrink-0">
           <img
-            src="/image_achat2.jpeg"
+            src="/BFB_FIT/image_achat2.jpeg"
             alt="プロフィール画像"
             className="w-full h-full object-cover"
           />
@@ -139,7 +139,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
         <div className="flex flex-col lg:flex-row items-center bg-gray-900 p-6">
           <div className="w-full lg:w-96 h-64 lg:h-96 overflow-hidden mb-6 lg:mb-0 lg:mr-36 flex-shrink-0">
             <img
-              src="image_ex2.jpg"
+              src="/BFB_FIT/image_ex2.jpg"
               alt="トレーニング実績"
               className="w-full h-full object-cover"
             />
@@ -162,7 +162,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
           </div>
           <div className="w-full lg:w-96 h-64 lg:h-96 overflow-hidden flex-shrink-0">
             <img
-              src="image_ex3.jpg"
+              src="/BFB_FIT/image_ex3.jpg"
               alt="次のトレーニング"
               className="w-full h-full object-cover"
             />
