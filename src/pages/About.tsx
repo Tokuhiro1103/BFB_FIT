@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram} from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 
 interface AboutProps {
