@@ -78,10 +78,10 @@ const About: React.FC<AboutProps> = ({ lang }) => {
       // EmailJSの設定
       // 実際の使用時は、EmailJSのダッシュボードで取得したIDを使用してください
       const result = await emailjs.sendForm(
-        'YOUR_SERVICE_ID', // EmailJSのService ID
-        'YOUR_TEMPLATE_ID', // EmailJSのTemplate ID
+        'service_frplsqg', // EmailJSのService ID
+        'template_x408ssk', // EmailJSのTemplate ID
         formRef.current,
-        'YOUR_PUBLIC_KEY' // EmailJSのPublic Key
+        'eTyY987KMapBESR4y' // EmailJSのPublic Key
       );
 
       console.log('SUCCESS!', result.text);
