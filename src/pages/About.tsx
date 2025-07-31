@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
 
 interface AboutProps {
   lang: "ja" | "en";
@@ -62,6 +63,38 @@ const text = {
 };
 
 const About: React.FC<AboutProps> = ({ lang }) => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formRef.current) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // EmailJSの設定
+      // 実際の使用時は、EmailJSのダッシュボードで取得したIDを使用してください
+      const result = await emailjs.sendForm(
+        'YOUR_SERVICE_ID', // EmailJSのService ID
+        'YOUR_TEMPLATE_ID', // EmailJSのTemplate ID
+        formRef.current,
+        'YOUR_PUBLIC_KEY' // EmailJSのPublic Key
+      );
+
+      console.log('SUCCESS!', result.text);
+      setSubmitStatus('success');
+      formRef.current.reset();
+    } catch (error) {
+      console.error('FAILED...', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       {/* トップ画像 - 画面いっぱい */}
@@ -173,20 +206,60 @@ const About: React.FC<AboutProps> = ({ lang }) => {
         <h3 className="text-xl lg:text-3xl font-bold text-white mb-8 text-center">{text[lang].contactTitle}</h3>
         <div className="bg-gray-900 rounded-xl p-4 lg:p-8">
           <p className="text-gray-300 mb-6 text-center text-sm lg:text-base">{text[lang].contactDesc}</p>
-          <form className="space-y-4 max-w-md mx-auto">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
             <div>
               <label className="block mb-1 font-semibold text-white text-sm lg:text-base">{text[lang].contactName}</label>
-              <input type="text" className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" placeholder={text[lang].contactName} />
+              <input 
+                type="text" 
+                name="user_name"
+                required
+                className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" 
+                placeholder={text[lang].contactName} 
+              />
             </div>
             <div>
               <label className="block mb-1 font-semibold text-white text-sm lg:text-base">{text[lang].contactMail}</label>
-              <input type="email" className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" placeholder={text[lang].contactMail} />
+              <input 
+                type="email" 
+                name="user_email"
+                required
+                className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" 
+                placeholder={text[lang].contactMail} 
+              />
             </div>
             <div>
               <label className="block mb-1 font-semibold text-white text-sm lg:text-base">{text[lang].contactContent}</label>
-              <textarea className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" rows={4} placeholder={text[lang].contactContent} />
+              <textarea 
+                name="message"
+                required
+                className="w-full border border-gray-600 rounded px-3 py-2 focus:outline-none focus:border-red-500 bg-gray-800 text-white" 
+                rows={4} 
+                placeholder={text[lang].contactContent} 
+              />
             </div>
-            <button type="submit" className="w-full bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors">{text[lang].contactBtn}</button>
+            <button 
+              type="submit" 
+              disabled={isSubmitting}
+              className="w-full bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors disabled:bg-gray-500"
+            >
+              {isSubmitting ? (lang === 'ja' ? '送信中...' : 'Sending...') : text[lang].contactBtn}
+            </button>
+            
+            {submitStatus === 'success' && (
+              <div className="bg-green-900 border border-green-700 rounded-lg p-4 text-center">
+                <p className="text-green-300">
+                  {lang === 'ja' ? 'お問い合わせを送信しました。ありがとうございます。' : 'Your message has been sent successfully. Thank you!'}
+                </p>
+              </div>
+            )}
+
+            {submitStatus === 'error' && (
+              <div className="bg-red-900 border border-red-700 rounded-lg p-4 text-center">
+                <p className="text-red-300">
+                  {lang === 'ja' ? '送信に失敗しました。もう一度お試しください。' : 'Failed to send message. Please try again.'}
+                </p>
+              </div>
+            )}
           </form>
           <div className="mt-6 text-center">
             <a href="https://www.instagram.com/achatfitness/" className="text-red-400 hover:text-red-300 underline text-sm lg:text-base">{text[lang].contactDM}</a>
