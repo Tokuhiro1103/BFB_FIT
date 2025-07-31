@@ -9,14 +9,14 @@ interface AboutProps {
 const text = {
   ja: {
     profileTitle: "プロフィール",
-    greeting: "こんにちは、Achatです！",
-    intro: `日本の大学卒業後、オーストラリアに移住。\n語学学校を経てTAFEでCertificate III・IV（フィットネス）を修了し、\n現在はパーソナルトレーナーとして活動しています。低価格で始めやすく、どんな方も歓迎！\n確かな知識と経験をもとにあなたの目標達成を全力でサポートします！`,
+    greeting: "こんにちは、Yukiです！",
+    intro: `日本の大学卒業後、オーストラリアに移住。\n語学学校を経てTAFEでCertificate III・IV（フィットネス）を修了し、\n現在はパーソナルトレーナーとして活動しています。低価格で始めやすく、どんな方も歓迎。\n確かな知識と経験をもとにあなたの目標達成を全力でサポートします！`,
     trainingTitle: "トレーニングの紹介",
-    trainingDesc1: `スポーツコーチングや睡眠コーチングなど、多岐にわたるスキルを活かして、\n一人ひとりの目標やライフスタイルに合わせた最適なプログラムを提供しています。\n\n提供するトレーニングは、筋力アップや姿勢改善、柔軟性の向上、体幹トレーニング、
+    trainingDesc1: `スポーツコーチングや栄養コーチングなど、多岐にわたるスキルを活かして、\n一人ひとりの目標やライフスタイルに合わせた最適なプログラムを提供しています。\n\n提供するトレーニングは、筋力アップや姿勢改善、柔軟性の向上、体幹トレーニング、
                     リラクゼーションストレッチなど幅広く対応。\n\n睡眠や食事、メンタルケアといった生活全体のバランスを重視し、体の内側から整えることを意識したプログラム設計を心がけています。\n\nまた、運動が初めての方から経験者まで、それぞれのペースに寄り添い、無理なく継続できるサポートを心がけています。\n\n「変わりたいけど、何から始めればいいかわからない」——そんな方こそ、ぜひ一度ご相談ください。\n一緒に理想の自分を目指して、第一歩を踏み出しましょう。`,
     trainingDesc2: `出張やオンラインセッションにも対応しており、どんなライフスタイルの方でも気軽にトレーニングを受けられます。\n\n筋力アップを目指すパーソナルトレーニングはもちろん、姿勢改善、柔軟性向上、体幹トレーニング、リラクゼーションストレッチなど、幅広いメニューをご用意しています。\n\n年齢や運動経験に関わらず、安心して取り組めるよう丁寧なカウンセリングを行い、目的や体調に応じたプログラムを一緒に作り上げていきます。\n\nジムに通うのはハードルが高い、自宅で気軽に運動したい、そんな方でも出張やオンラインを活用することでご自宅や空き時間に効率的にトレーニングできます。\n\n日々の小さな積み重ねが体と心に大きな変化をもたらします。\nあなたの目標達成を全力でサポートしますので、ぜひお気軽にご相談ください！`,
     meritTitle: "ライフスタイルに寄り添う、柔軟で安心のサポート体制",
-    meritDesc: `✅ 初心者歓迎\n✅ 無理なく続けられるメニューをご提案\n✅ 減量・筋力アップ・姿勢改善もサポート\n✅ 栄養コーチング対応可能！ブリスベンで手に入る食材を使った、PFCバランスの整った食事メニューもご紹介！\n🏃‍♀️公園セッションも受付中！（初回無料／20ドル〜）\nシティ近郊の公園で行うセッションは、お友達との参加もOK！\n開放的な空間で楽しく体を動かしましょう！\n📍 場所：Southbank Fitness Center（屋内）＋ Brisbane市内の公園（屋外）\n💰 料金：初回2回無料！その後は1セッション $30〜（公園セッションは $20〜）`,
+    meritDesc: `✅ 初心者歓迎\n✅ 無理なく続けられるメニューをご提案\n✅ 減量・筋力アップ・姿勢改善もサポート\n✅ 栄養コーチング対応可能！ブリスベンで手に入る食材を使った、PFCバランスの整った食事メニューもご紹介！\n🏃‍♀️公園セッションも受付中！\nシティ近郊の公園で行うセッションは、お友達との参加もOK！\n開放的な空間で楽しく体を動かしましょう！\n📍 場所：Southbank Fitness Center（屋内）＋ Brisbane市内の公園（屋外）\n💰 料金：1セッション $40〜`,
     faqTitle: "よくある質問",
     faq: [
       { q: "Q. 運動初心者でも大丈夫ですか？", a: "A. もちろん大歓迎です！丁寧にサポートします。経験レベルに合わせて、無理のないプログラムを組んでいきます。" },
@@ -36,13 +36,13 @@ const text = {
   },
       en: {
       profileTitle: "Profile",
-      greeting: "Hello, I'm Achat!",
+      greeting: "Hello, I'm Yuki!",
       intro: `After graduating from a Japanese university, I moved to Australia.\nAfter attending a language school, I completed Certificate III & IV (Fitness) at TAFE.\nCurrently, I work as a personal trainer. My services are affordable and open to everyone!\nI will fully support you in achieving your goals with my solid knowledge and experience!`,
       trainingTitle: "Training Introduction",
-      trainingDesc1: `Utilizing a wide range of skills such as sports coaching and sleep coaching,\nI provide optimal programs tailored to each individual's goals and lifestyle.\n\nThe training I provide covers muscle gain, posture improvement, flexibility enhancement, core training,\nand relaxation stretching to meet various needs.\n\nI focus on overall lifestyle balance, including sleep, diet, and mental care, designing programs that improve the body from the inside out.\n\nI also support everyone from beginners to experienced individuals, adapting to each person's pace and providing sustainable support.\n\nIf you want to change but don't know where to start, please feel free to consult me.\nLet's take the first step toward your ideal self together!`,
+      trainingDesc1: `Utilizing a wide range of skills such as sports coaching and nutrition coaching,\nI provide optimal programs tailored to each individual's goals and lifestyle.\n\nThe training I provide covers muscle gain, posture improvement, flexibility enhancement, core training,\nand relaxation stretching to meet various needs.\n\nI focus on overall lifestyle balance, including sleep, diet, and mental care, designing programs that improve the body from the inside out.\n\nI also support everyone from beginners to experienced individuals, adapting to each person's pace and providing sustainable support.\n\nIf you want to change but don't know where to start, please feel free to consult me.\nLet's take the first step toward your ideal self together!`,
       trainingDesc2: `I also offer on-site and online sessions, making training accessible to anyone regardless of their lifestyle.\n\nIn addition to personal training for muscle gain, I offer posture improvement, flexibility, core training, and relaxation stretching.\n\nRegardless of age or experience, I provide careful counseling and create programs tailored to your goals and condition.\n\nIf going to the gym feels like a hurdle or you want to exercise at home, you can train efficiently at home or during your free time using on-site or online sessions.\n\nSmall daily efforts can bring big changes to your body and mind.\nI will fully support you in achieving your goals, so please feel free to contact me!`,
       meritTitle: "Flexible and Reliable Support System Tailored to Your Lifestyle",
-      meritDesc: `✅ Beginners welcome\n✅ Propose menus that can be continued without strain\n✅ Support for weight loss, muscle gain, and posture improvement\n✅ Nutrition coaching available! We also introduce well-balanced meal menus using ingredients available in Brisbane.\n🏃‍♀️ Park sessions available! (First session free / from $20)\nSessions in parks near the city are also OK with friends!\nLet's have fun exercising in an open space!\n📍 Location: Southbank Fitness Center (indoor) + parks in Brisbane (outdoor)\n💰 Price: First 2 sessions free! After that, $30~/session (park sessions from $20~)`,
+      meritDesc: `✅ Beginners welcome\n✅ Propose menus that can be continued without strain\n✅ Support for weight loss, muscle gain, and posture improvement\n✅ Nutrition coaching available! We also introduce well-balanced meal menus using ingredients available in Brisbane.\n🏃‍♀️ Park sessions available!\nSessions in parks near the city are also OK with friends!\nLet's have fun exercising in an open space!\n📍 Location: Southbank Fitness Center (indoor) + parks in Brisbane (outdoor)\n💰 Price: $40~/session`,
       faqTitle: "Frequently Asked Questions",
       faq: [
         { q: "Q. Is it okay for beginners?", a: "A. Absolutely! I will support you carefully. I will create a program that matches your experience level." },
@@ -269,9 +269,9 @@ const About: React.FC<AboutProps> = ({ lang }) => {
 
      {/* SNSリンク */}
     <div className="flex justify-center space-x-6 mt-16">
-        <a href="https://www.facebook.com/yu.yeachat.you.gui/" className="text-white hover:text-blue-700 transition-colors">
+        {/* <a href="https://www.facebook.com/yu.yeachat.you.gui/" className="text-white hover:text-blue-700 transition-colors">
           <FaFacebook size={32} />
-        </a>
+        </a> */}
         <a href="https://www.instagram.com/achatfitness/" className="text-white hover:text-pink-600 transition-colors">
           <FaInstagram size={32} />
         </a>
